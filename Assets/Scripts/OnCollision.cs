@@ -18,7 +18,7 @@ public class OnCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
         if(other.CompareTag("Player")){
-            Debug.Log("accessed");
+            // Debug.Log("accessed");
             Destroy(gameObject);
         }
     }
