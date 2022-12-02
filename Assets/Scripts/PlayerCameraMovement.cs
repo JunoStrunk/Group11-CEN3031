@@ -17,6 +17,7 @@ public class PlayerCameraMovement : MonoBehaviour
     public float rotationFactorPerFrame = 10.0f;
     #endregion
 
+
     void Update()
     {
         // Player Inputs: scalars that determine how much a player moves.
