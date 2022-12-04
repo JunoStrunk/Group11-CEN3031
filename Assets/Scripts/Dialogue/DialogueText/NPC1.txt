@@ -1,0 +1,25 @@
+:: StoryTitle
+DDNPC1
+
+:: StoryData
+{
+ "ifid": "37CEF602-D18B-4AC2-800E-E4538CBE751B",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "1",
+ "start": "START"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: StartNode [START] {"position":"404,170","size":"100,100"}
+In a study by Guadalupe Ayala, she found that working with small stores often termed bodegas or tiendas could be an effective way to ease food deserts. These stores were given funding to stock fresh food as well as give out recipes and create enticing displays. Working with well-known stores help gain the trust of the residents, who may be hesitant to engage in government programs.
+[[Continue]]
+
+:: Continue [END] {"position":"404,320","size":"100,100"}
+Continue

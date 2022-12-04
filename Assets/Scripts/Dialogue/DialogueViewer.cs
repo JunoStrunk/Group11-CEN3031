@@ -21,16 +21,40 @@ public class DialogueViewer : MonoBehaviour
     [DllImport("__Internal")]
     private static extern void openPage(string url);
 
-    private void Start()
+    public void Start()
+    {
+        this.GetComponent<Canvas>().enabled = false;
+    }
+
+    public void npc1()
     {
         controller = dialogueController;
         controller.onEnteredNode += OnNodeEntered;
-        controller.InitializeDialogue();
 
-
+        controller.InitializeDialogue(1);
         // Start the dialogue
         var curNode = controller.GetCurrentNode();
+        
+    }
 
+    public void npc2()
+    {
+        controller = dialogueController;
+        controller.onEnteredNode += OnNodeEntered;
+
+        controller.InitializeDialogue(2);
+        // Start the dialogue
+        var curNode = controller.GetCurrentNode();
+    }
+
+    public void npc3()
+    {
+        controller = dialogueController;
+        controller.onEnteredNode += OnNodeEntered;
+
+        controller.InitializeDialogue(3);
+        // Start the dialogue
+        var curNode = controller.GetCurrentNode();
     }
 
     public static void KillAllChildren(UnityEngine.Transform parent)
@@ -52,14 +76,6 @@ public class DialogueViewer : MonoBehaviour
     {
         txtNodeDisplay.text = newNode.text;
 
-        KillAllChildren(parentOfResponses);
-        for (int i = newNode.responses.Count - 1; i >= 0; i--)
-        {
-            int currentChoiceIndex = i;
-            var response = newNode.responses[i];
-            var responseButton = Instantiate(prefab_btnResponse, parentOfResponses);
-            responseButton.GetComponentInChildren<TextMeshProUGUI>().text = response.displayText;
-            responseButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
-        }
+        //KillAllChildren(parentOfResponses);
     }
 }

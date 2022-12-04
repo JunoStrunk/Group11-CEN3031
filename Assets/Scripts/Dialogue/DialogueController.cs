@@ -8,7 +8,9 @@ using static DialogueObject;
 public class DialogueController : MonoBehaviour
 {
 
-    [SerializeField] TextAsset twineText;
+    [SerializeField] TextAsset NPC1;
+    [SerializeField] TextAsset NPC2;
+    [SerializeField] TextAsset NPC3;
     Dialogue curDialogue;
     Node curNode;
 
@@ -20,9 +22,23 @@ public class DialogueController : MonoBehaviour
         return curNode;
     }
 
-    public void InitializeDialogue()
+    public void InitializeDialogue(int npc)
     {
-        curDialogue = new Dialogue(twineText);
+        switch(npc)
+        {
+            case 1:
+                curDialogue = new Dialogue(NPC1);
+                break;
+            case 2:
+                curDialogue = new Dialogue(NPC2);
+                break;
+            case 3:
+                curDialogue = new Dialogue(NPC3);
+                break;
+            default:
+                curDialogue = new Dialogue(NPC1);
+                break;
+        }
         curNode = curDialogue.GetStartNode();
         onEnteredNode(curNode);
     }
