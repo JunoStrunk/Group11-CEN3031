@@ -5,7 +5,8 @@ using UnityEngine;
 public class NPCController : MonoBehaviour
 {
     [SerializeField] DialogueViewer viewer;
-    
+    [SerializeField] Lush_Bounds_Behavior lushBounds;
+    bool entered = false;
     enum NPC
     {
         One,
@@ -37,15 +38,21 @@ public class NPCController : MonoBehaviour
             }
 
             viewer.GetComponent<Canvas>().enabled = true;
+
+            Debug.Log(entered);
+            if (!entered) //if we haven't entered yet
+            {
+                lushBounds.expandLush();
+                entered = true;
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if(other.tag == "Player")
         {
             viewer.GetComponent<Canvas>().enabled = false;
-            this.GetComponent<SphereCollider>().enabled = false;
         }
     }
 }

@@ -256,4 +256,28 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6637874575333497725}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7367788835361839057, guid: cb19932d0c578a345a5c485b5e9086ae, type: 3}
+        m_TargetAssemblyTypeName: Lush_Bounds_Behavior, Assembly-CSharp
+        m_MethodName: updateLush
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 7861569890064343866, guid: e3f015e5e528a9f4eaa332fc2f7f1eff, type: 3}
+        m_TargetAssemblyTypeName: DialogueViewer, Assembly-CSharp
+        m_MethodName: viewerEndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

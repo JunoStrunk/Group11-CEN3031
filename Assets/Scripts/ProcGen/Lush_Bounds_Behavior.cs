@@ -28,7 +28,7 @@ public class Lush_Bounds_Behavior : MonoBehaviour
         updateLush();
     }
 
-    private void expandLush()
+    public void expandLush()
     {
         col.radius *= expand;
 

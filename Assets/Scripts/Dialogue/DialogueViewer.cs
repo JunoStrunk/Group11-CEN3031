@@ -12,11 +12,13 @@ using TMPro;
 
 public class DialogueViewer : MonoBehaviour
 {
-    [SerializeField] Transform parentOfResponses;
+    //[SerializeField] Transform parentOfResponses;
     [SerializeField] Button prefab_btnResponse;
     [SerializeField] TextMeshProUGUI txtNodeDisplay;
     [SerializeField] DialogueController dialogueController;
+    [SerializeField] GameObject NodeDisplayBG;
     DialogueController controller;
+    Button newButton;
 
     [DllImport("__Internal")]
     private static extern void openPage(string url);
@@ -34,7 +36,6 @@ public class DialogueViewer : MonoBehaviour
         controller.InitializeDialogue(1);
         // Start the dialogue
         var curNode = controller.GetCurrentNode();
-        
     }
 
     public void npc2()
@@ -57,6 +58,11 @@ public class DialogueViewer : MonoBehaviour
         var curNode = controller.GetCurrentNode();
     }
 
+    public void viewerEndDialogue()
+    {
+        Destroy(newButton);
+    }
+
     public static void KillAllChildren(UnityEngine.Transform parent)
     {
         UnityEngine.Assertions.Assert.IsNotNull(parent);
@@ -75,7 +81,5 @@ public class DialogueViewer : MonoBehaviour
     private void OnNodeEntered(Node newNode)
     {
         txtNodeDisplay.text = newNode.text;
-
-        //KillAllChildren(parentOfResponses);
     }
 }
