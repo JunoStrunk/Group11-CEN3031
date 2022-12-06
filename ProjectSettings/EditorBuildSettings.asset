@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProcGen_Testing.unity
     guid: 4a6cf7d101286aa4da5458c681bf76d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Movement_Testing_Nat.unity
     guid: 7925da4179ee48c41aab005eb96adbdd
   m_configObjects: {}

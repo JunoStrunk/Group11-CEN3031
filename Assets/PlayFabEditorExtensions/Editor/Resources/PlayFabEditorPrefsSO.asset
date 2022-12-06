@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
   DevAccountEmail: micah.gant55@gmail.com
-  DevAccountToken: 3ap73bh6h7957a55hx5egn3dyw6h5iotztgza8q8dicdhe8797zrsy4h61et4duaswyq4jzxmnwoohfimgjueopqxf9agub4bfoz7igrmjbyguipkf9zr1gfc3w84jg4c1xre3ij8goup8za83ey4kt41ez6mq8jbrs3ezgzpxeax5ttwo71ofr5ak8ndc346zyzqyb8
+  DevAccountToken: g6e8qxb79mg4utp77ja3bimoc9wa6kgs9uoquzhhhre48gh9kozgueiyftokepumndb4grrrzeob89zwrs4zihwcxdzjdam9jw8bye5hep7kw3utuahqwpg65n4roicjag4xdx94sob1bamsya6giwswrd6wkxgcx41m8jqgs46hm7gtiaiz1w9n8577spsjndx1fzhs
   AadAuthorization: 
   SelectedStudio: 
   SdkPath: Assets/PlayFabSDK
