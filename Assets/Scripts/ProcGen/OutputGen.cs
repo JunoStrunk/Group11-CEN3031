@@ -6,17 +6,23 @@ public class OutputGen : MonoBehaviour
 {
     WFC_Grid grid;
     
-    public int dimension;
+    [SerializeField] int dimension;
+    [SerializeField] int spacing;
 
-    public Transform par;
-    public Transform SUP;
-    public Transform SRIGHT;
-    public Transform SDOWN;
-    public Transform SLEFT;
-    public Transform SHRT;
-    public Transform TALL;
+    [SerializeField] Transform par;
+    [SerializeField] Transform SUP;
+    [SerializeField] Transform SRIGHT;
+    [SerializeField] Transform SDOWN;
+    [SerializeField] Transform SLEFT;
+    [SerializeField] Transform SHRT;
+    [SerializeField] Transform TALL;
 
     //top right is positive X: +100 negative Z: -100
+
+    private void Start()
+    {
+        generateTerrain();
+    }
 
     private Transform getState(int state)
     {
@@ -61,9 +67,9 @@ public class OutputGen : MonoBehaviour
                         block.localPosition = pos;
 
                         //Move position
-                        posC -= 2;
+                        posC -= spacing;
                     }
-                    posR += 2;
+                    posR += spacing;
                     posC = 0;
                 }
             }

@@ -28,21 +28,24 @@ public class Lush_Bounds_Behavior : MonoBehaviour
         updateLush();
     }
 
-    private void expandLush()
+    public void expandLush()
     {
         col.radius *= expand;
 
         updateLush();
     }
 
-    private void updateLush()
+    public void updateLush()
     {
         Collider[] newLushCols = Physics.OverlapSphere(transform.position, col.radius);
         foreach (Collider modelsCol in newLushCols)
         {
-            MeshRenderer modelMesh = modelsCol.GetComponent<MeshRenderer>();
-            if(modelMesh != null)
-                modelMesh.material = green;
+            if (modelsCol.tag == "Terrain")
+            {
+                Renderer modelMesh = modelsCol.GetComponent<Renderer>();
+                if (modelMesh != null)
+                    modelMesh.material = green;
+            }
         }
     }
 

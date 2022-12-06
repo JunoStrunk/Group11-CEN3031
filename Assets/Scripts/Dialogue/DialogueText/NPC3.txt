@@ -1,0 +1,25 @@
+:: StoryTitle
+DDNPC1
+
+:: StoryData
+{
+ "ifid": "37CEF602-D18B-4AC2-800E-E4538CBE751B",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "1",
+ "start": "START"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: StartNode [START] {"position":"404,170","size":"100,100"}
+Some farmers markets will use an EBT "match" system to help encourage buying healthy foods. This means that for every purchase at the market the equal amount spent will be given to the customer's SNAP account. This provides more money for food while also encouraging healthy eating habits.
+[[Continue]]
+
+:: Continue [END] {"position":"404,320","size":"100,100"}
+Continue
