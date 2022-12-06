@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8236d8c7b8466468198bfd001fa654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameScene: Movement Testing
+  newGameScene: ProcGen_Collision_Testing
 --- !u!1 &391205239
 GameObject:
   m_ObjectHideFlags: 0

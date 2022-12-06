@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Login Screen.unity
+    guid: a69f58b1e790e344c83e8e517f5c15c2
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/AnimationTest.unity
+    guid: 793b187adde46a54da03ffa06280d207
+  - enabled: 1
     path: Assets/Scenes/ProcGen_Collision_Testing.unity
     guid: eb29ecdc5fbf7b1469bd500b2d51ce79
+  - enabled: 1
+    path: Assets/Scenes/ProcGen_Testing.unity
+    guid: 4a6cf7d101286aa4da5458c681bf76d5
+  - enabled: 1
+    path: Assets/Scenes/Movement_Testing_Nat.unity
+    guid: 7925da4179ee48c41aab005eb96adbdd
   m_configObjects: {}
