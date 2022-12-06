@@ -6,17 +6,20 @@ using TMPro;
 public class PlayerCameraMovement : MonoBehaviour
 {
     #region Variables
+    /////////////////////////////////////////////////////////////////////////////
     [Header("Controllers")]
+    /////////////////////////////////////////////////////////////////////////////
     public CharacterController player;
     public Transform camTransform;
 
+    /////////////////////////////////////////////////////////////////////////////
     [Header("Status Values")]
+    /////////////////////////////////////////////////////////////////////////////
     [Tooltip("Player's speed. Determines how fast they move in all aspects.")]
     public float playerSpeed = 10.0f;
     [Tooltip("Player's rotation speed. Determines how fast their body orients to match new movement direction.")]
     public float rotationFactorPerFrame = 10.0f;
     #endregion
-
 
     void Update()
     {
@@ -37,7 +40,6 @@ public class PlayerCameraMovement : MonoBehaviour
         // If player gives input, calculate.
         if (input != Vector3.zero)
         {
-            Debug.Log("Move detected");
             CameraDisplacement(input);
         }
     }
