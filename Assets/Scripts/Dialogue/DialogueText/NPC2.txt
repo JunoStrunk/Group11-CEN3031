@@ -1,0 +1,25 @@
+:: StoryTitle
+DDNPC1
+
+:: StoryData
+{
+ "ifid": "37CEF602-D18B-4AC2-800E-E4538CBE751B",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "1",
+ "start": "START"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: StartNode [START] {"position":"404,170","size":"100,100"}
+The most obvious way of eliminating food deserts is to spend the time and resources needed to get fresh foods into these areas. This can be accomplished in a number of ways including funding farmers markets and programs stocking stores with fresh foods.
+[[Continue]]
+
+:: Continue [END] {"position":"404,320","size":"100,100"}
+Continue
