@@ -1224,6 +1224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 796382055}
   staminaCap: 120
+  staminaFloor: 30
   maxStamina: 100
   currStamina: 100
 --- !u!1 &899075513
@@ -1698,6 +1699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1320823514}
   camTransform: {fileID: 963194228}
+  playerSpeed: 15
+  rotationFactorPerFrame: 15
 --- !u!1 &1421877968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,7 +2828,7 @@ PrefabInstance:
     - target: {fileID: 7367788835361839057, guid: cb19932d0c578a345a5c485b5e9086ae, type: 3}
       propertyPath: green
       value: 
-      objectReference: {fileID: -2505642851634945670, guid: 75731fd17e484ed4c919745ebc91275b, type: 3}
+      objectReference: {fileID: 2100000, guid: 93470515ebf718c4d9bbec2c03712bab, type: 2}
     - target: {fileID: 7367788835361839057, guid: cb19932d0c578a345a5c485b5e9086ae, type: 3}
       propertyPath: expand
       value: 10
